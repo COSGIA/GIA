@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genesis Research Initiative | Structured Intelligence Infrastructure</title>
+    <meta name="description" content="Independent experimental initiative focused on AI-assisted analytical systems and cybersecurity research prototypes.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230b1020' stroke='%233b82f6' stroke-width='2'/><text x='50' y='68' font-size='50' text-anchor='middle' fill='%233b82f6'>G</text></svg>">
+</head>
+<body>
+
+    <!-- BACKGROUND LAYERS -->
+    <div class="bg-layer base-gradient"></div>
+    <div class="bg-layer grid-overlay"></div>
+    <div class="bg-layer particle-network" id="particles"></div>
+
+    <!-- TOP STRIP -->
+    <div class="top-strip">
+        <div class="top-strip-container">
+            <span class="top-quote">"To build across borders, one must separate who they are from how they operate."</span>
+            <div class="top-logo">GENESIS</div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="main-nav" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo-wrapper">
+                <!-- REPLACE THIS src WITH YOUR LOGO FILE PATH -->
+                <!-- Example: src="logo.png" or src="images/logo.svg" -->
+                <img src="snapedit_1733648639502-removebg-preview.png" 
+                     alt="Genesis Research Logo" 
+                     class="site-logo"
+                     id="siteLogo">
+                <span class="nav-logo">GENESIS RESEARCH</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#vision">Vision</a></li>
+                <li><a href="#architecture">Architecture</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#domains">Domains</a></li>
+                <li><a href="#offerings">Offerings</a></li>
+                <li><a href="#apply">Apply</a></li>
+                <li><a href="#login" class="nav-btn">Login</a></li>
+            </ul>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Structured Intelligence Infrastructure</h1>
+                <p class="hero-subtitle">
+                    Genesis Research is an independent experimental initiative focused on 
+                    AI-assisted analytical systems and cybersecurity research prototypes.
+                </p>
+                <p class="hero-objective">
+                    Its objective is to develop structured evaluation frameworks that improve 
+                    clarity, consistency, and analytical depth across complex domains.
+                </p>
+                <button class="cta-button" onclick="scrollToSection('apply')">
+                    Enter Initiative
+                </button>
+            </div>
+            <div class="hero-visual">
+                <div class="sphere-container">
+                    <div class="abstract-sphere">
+                        <div class="sphere-ring ring-1"></div>
+                        <div class="sphere-ring ring-2"></div>
+                        <div class="sphere-ring ring-3"></div>
+                        <div class="sphere-ring ring-4"></div>
+                        <div class="sphere-ring ring-5"></div>
+                        <div class="sphere-core"></div>
+                        <div class="sphere-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VISION SECTION -->
+    <section id="vision" class="vision-section">
+        <div class="section-container">
+            <h2 class="section-title">Framework</h2>
+            <div class="vision-grid">
+                <div class="vision-card">
+                    <div class="card-header">
+                        <span class="card-number">01</span>
+                        <h3>The Problem</h3>
+                    </div>
+                    <p>Information today moves faster than verification. Visibility often precedes validation. Across media, business, and technology, decisions are frequently shaped by assumption rather than disciplined evaluation.</p>
+                    <p class="card-highlight">Speed is rewarded. Depth is delayed.</p>
+                </div>
+                <div class="vision-card">
+                    <div class="card-header">
+                        <span class="card-number">02</span>
+                        <h3>The Observation</h3>
+                    </div>
+                    <p>The issue is not simply misinformation. It is the absence of structured reasoning frameworks.</p>
+                    <p>Individuals who engage across multiple domains often develop stronger analytical flexibility. Exposure to different fields reduces rigidity and strengthens judgment. The problem is not specialization — it is premature narrowing without structured exploration.</p>
+                </div>
+                <div class="vision-card">
+                    <div class="card-header">
+                        <span class="card-number">03</span>
+                        <h3>The Response</h3>
+                    </div>
+                    <p>Genesis Research was created at the intersection of these observations.</p>
+                    <p>It operates as a multi-field research environment supported by AI-assisted validation systems. The aim is not to replace human reasoning, but to strengthen it through structured consistency checks and disciplined analytical frameworks.</p>
+                    <p class="card-highlight accent">This initiative is not driven by ideology. It is driven by method.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOUNDER STATEMENT -->
+    <section class="founder-section">
+        <div class="founder-container">
+            <div class="founder-card">
+                <div class="quote-mark">"</div>
+                <blockquote class="founder-quote">
+                    Not to replace one belief with another, but to reduce dependence on belief altogether.
+                </blockquote>
+                <div class="founder-details">
+                    <div class="founder-info">
+                        <span class="founder-label">Founder</span>
+                        <span class="founder-name">Anonymous</span>
+                    </div>
+                    <div class="founder-divider"></div>
+                    <div class="founder-info">
+                        <span class="founder-label">Managing Director</span>
+                        <span class="founder-name">Anushka Gupta</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESEARCH ARCHITECTURE -->
+    <section id="architecture" class="architecture-section">
+        <div class="section-container">
+            <h2 class="section-title">Research Architecture</h2>
+            <p class="section-subtitle">Genesis operates through a structured research pipeline</p>
+            <div class="architecture-grid">
+                <div class="arch-card">
+                    <div class="arch-icon">◈</div>
+                    <h3>Multi-Field Research Model</h3>
+                    <p>Participants develop cross-domain capability by conducting structured research across analytical, technical, and creative domains.</p>
+                </div>
+                <div class="arch-card">
+                    <div class="arch-icon">◉</div>
+                    <h3>AI Validation Layer</h3>
+                    <p>AI-assisted claim extraction, logical consistency scoring, structured bias evaluation, and reasoning validation.</p>
+                </div>
+                <div class="arch-card">
+                    <div class="arch-icon">◎</div>
+                    <h3>Human Review Framework</h3>
+                    <p>Structured human reasoning strengthens analytical depth and contextual evaluation.</p>
+                </div>
+                <div class="arch-card">
+                    <div class="arch-icon">◇</div>
+                    <h3>Client Integration System</h3>
+                    <p>Content creators, businesses, and independent learners can request verified structured analysis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CURRENT RESEARCH MODULES -->
+    <section id="research" class="research-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Current Research Modules</h2>
+                <span class="phase-label">Prototype Phase</span>
+            </div>
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="research-badge">Under Development</div>
+                    <h3>Research Integrity Framework</h3>
+                    <p>AI-assisted claim extraction, logical consistency analysis, structured bias evaluation, and multi-layer reasoning validation.</p>
+                </div>
+                <div class="research-card">
+                    <div class="research-badge">Under Development</div>
+                    <h3>Application Security Audit System</h3>
+                    <p>Structured vulnerability assessment prototype for web architecture analysis and exploit surface mapping.</p>
+                </div>
+                <div class="research-card">
+                    <div class="research-badge">Under Development</div>
+                    <h3>Signal Intelligence Modeling</h3>
+                    <p>Multi-layer data interpretation and structured validation frameworks.</p>
+                </div>
+                <div class="research-card">
+                    <div class="research-badge">Under Development</div>
+                    <h3>Emerging Technology Evaluation</h3>
+                    <p>Research analysis of frontier systems and evolving technological fields.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INDUSTRY DOMAINS -->
+    <section id="domains" class="domains-section">
+        <div class="section-container">
+            <h2 class="section-title">Active Industry Domains</h2>
+            <div class="domains-grid">
+                <div class="domain-card">
+                    <span class="domain-index">01</span>
+                    <span class="domain-name">Artificial Intelligence Systems</span>
+                </div>
+                <div class="domain-card">
+                    <span class="domain-index">02</span>
+                    <span class="domain-name">Cybersecurity Architecture</span>
+                </div>
+                <div class="domain-card">
+                    <span class="domain-index">03</span>
+                    <span class="domain-name">Industrial Infrastructure</span>
+                </div>
+                <div class="domain-card">
+                    <span class="domain-index">04</span>
+                    <span class="domain-name">Signal Intelligence Modeling</span>
+                </div>
+                <div class="domain-card">
+                    <span class="domain-index">05</span>
+                    <span class="domain-name">Data Systems Engineering</span>
+                </div>
+                <div class="domain-card">
+                    <span class="domain-index">06</span>
+                    <span class="domain-name">Emerging Technology Evaluation</span>
+                </div>
+                <div class="domain-card">
+                    <span class="domain-index">07</span>
+                    <span class="domain-name">Music & Media Systems</span>
+                </div>
+                <div class="domain-card">
+                    <span class="domain-index">08</span>
+                    <span class="domain-name">Literature & Art Research</span>
+                </div>
+            </div>
+            <p class="domains-note">These domains are approached through structured research methodology rather than surface-level commentary.</p>
+        </div>
+    </section>
+
+    <!-- WHAT WE OFFER -->
+    <section id="offerings" class="offerings-section">
+        <div class="section-container">
+            <div class="offerings-divider">
+                <span></span>
+            </div>
+            <h2 class="section-title">What We Offer</h2>
+            <div class="offerings-grid">
+                <div class="offering-card">
+                    <div class="offering-icon">⬡</div>
+                    <h3>Research Network Access</h3>
+                    <p>A disciplined collaborative intelligence environment.</p>
+                </div>
+                <div class="offering-card">
+                    <div class="offering-icon">⬢</div>
+                    <h3>System Architecture Exposure</h3>
+                    <p>Participation in developing analytical frameworks and evaluation models.</p>
+                </div>
+                <div class="offering-card">
+                    <div class="offering-icon">◫</div>
+                    <h3>Upcoming Analytical Tools</h3>
+                    <p>AI integrity systems, structured validation engines, and security research prototypes under development.</p>
+                </div>
+                <div class="offering-card">
+                    <div class="offering-icon">◬</div>
+                    <h3>Discipline-Based Evaluation</h3>
+                    <p>Progress measured by execution quality, reasoning depth, and structured thinking.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROADMAP SECTION -->
+    <section class="roadmap-section">
+        <div class="section-container">
+            <h2 class="section-title">Development Roadmap</h2>
+            <div class="roadmap-timeline">
+                <div class="roadmap-item">
+                    <div class="roadmap-marker">01</div>
+                    <div class="roadmap-content">
+                        <h3>Phase 1</h3>
+                        <p>Prototype Development & Internal Validation</p>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-marker">02</div>
+                    <div class="roadmap-content">
+                        <h3>Phase 2</h3>
+                        <p>AI Validation Engine Refinement</p>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-marker">03</div>
+                    <div class="roadmap-content">
+                        <h3>Phase 3</h3>
+                        <p>Structured Research Collaboration Expansion</p>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-marker">04</div>
+                    <div class="roadmap-content">
+                        <h3>Phase 4</h3>
+                        <p>Client Integration & Analytical Service Deployment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- APPLICATION SECTION -->
+    <section id="apply" class="apply-section">
+        <div class="section-container">
+            <h2 class="section-title">Applications Open</h2>
+            <p class="apply-intro">Genesis accepts applications under two categories:</p>
+            
+            <div class="apply-grid">
+                <div class="apply-info">
+                    <div class="role-card">
+                        <h3>Researcher</h3>
+                        <p>Researchers contribute structured analytical work across selected domains.</p>
+                    </div>
+                    <div class="role-card">
+                        <h3>Client</h3>
+                        <p>Clients may request research analysis, structured validation, or technical audit prototypes.</p>
+                    </div>
+                    <div class="apply-note">
+                        <p>All submissions are reviewed manually.</p>
+                        <p>Submit to: <strong>godrick@tutamail.com</strong></p>
+                    </div>
+                </div>
+                
+                <div class="apply-form-container">
+                    <form id="applicationForm" class="apply-form">
+                        <div class="form-group">
+                            <label for="role">Apply As</label>
+                            <select id="role" name="role" required onchange="toggleConditionalFields()">
+                                <option value="">Select Role</option>
+                                <option value="researcher">Researcher</option>
+                                <option value="client">Client</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="godrick@tutamail.com">
+                        </div>
+                        
+                        <div class="form-group conditional-field" id="expertiseField" style="display: none;">
+                            <label for="expertise">Primary Expertise</label>
+                            <select id="expertise" name="expertise">
+                                <option value="">Select Expertise</option>
+                                <option value="Artificial Intelligence Systems">Artificial Intelligence Systems</option>
+                                <option value="Cybersecurity Architecture">Cybersecurity Architecture</option>
+                                <option value="Industrial Infrastructure">Industrial Infrastructure</option>
+                                <option value="Signal Intelligence Modeling">Signal Intelligence Modeling</option>
+                                <option value="Data Systems Engineering">Data Systems Engineering</option>
+                                <option value="Emerging Technology Evaluation">Emerging Technology Evaluation</option>
+                                <option value="Music & Media Systems">Music & Media Systems</option>
+                                <option value="Literature & Art Research">Literature & Art Research</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group conditional-field" id="requirementsField" style="display: none;">
+                            <label for="researchRequirements">Research Requirement</label>
+                            <textarea id="researchRequirements" name="researchRequirements" rows="3" placeholder="Describe your research requirement"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="statement">Statement (Minimum 50 words)</label>
+                            <textarea id="statement" name="statement" rows="5" required placeholder="Describe your background and interest in joining Genesis Research..."></textarea>
+                            <span class="word-count">Word count: <span id="wordCount">0</span></span>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn" id="submitBtn">
+                            Submit Application
+                        </button>
+                        
+                        <div class="form-message" id="formMessage"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOGIN SECTION -->
+    <section id="login" class="login-section">
+        <div class="section-container">
+            <h2 class="section-title">Login Portal</h2>
+            <span class="phase-label">Phase 2</span>
+            <p class="login-intro">Full authentication infrastructure will be implemented during the next development cycle.</p>
+            
+            <div class="login-buttons">
+                <button class="login-btn" onclick="showLoginPlaceholder('Researcher')">
+                    <span class="login-icon">🔐</span>
+                    Researcher Dashboard
+                </button>
+                <button class="login-btn" onclick="showLoginPlaceholder('Client')">
+                    <span class="login-icon">🔒</span>
+                    Client Dashboard
+                </button>
+            </div>
+            
+            <div class="login-placeholder" id="loginPlaceholder">
+                <div class="placeholder-content">
+                    <h3>Dashboard Under Development</h3>
+                    <p>Phase 2 implementation scheduled for upcoming cycle</p>
+                    <p class="placeholder-note">Contact: godrick@tutamail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <h3>Genesis Research Initiative</h3>
+                    <p>Independent Experimental Analytical Infrastructure</p>
+                </div>
+                <div class="footer-leadership">
+                    <div class="leader-item">
+                        <span class="leader-label">Managing Director</span>
+                        <span class="leader-name">Anushka Gupta</span>
+                    </div>
+                    <div class="leader-divider"></div>
+                    <div class="leader-item">
+                        <span class="leader-label">Founder</span>
+                        <span class="leader-name">Anonymous</span>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <p>Contact: godrick@tutamail.com</p>
+                    <p>Location: India | Operating Globally</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Genesis Research Initiative. All rights reserved.</p>
+                <p class="footer-status">Prototype-Stage Research Platform</p>
+                <div class="footer-links">
+                    <a href="#">Research Ethics Policy</a>
+                    <span class="link-divider">|</span>
+                    <a href="#">Terms of Participation</a>
+                    <span class="link-divider">|</span>
+                    <a href="#">Data Handling Statement</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- NOTIFICATION CONTAINER -->
+    <div id="notificationContainer" class="notification-container"></div>
+
+    <!-- EmailJS Initialization -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("0BOUwIQxa9kAyhz-f");
+        })();
+    </script>
+    
+    <!-- Main App JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
